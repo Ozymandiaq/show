@@ -30,15 +30,15 @@
                             <input type="file" name="image" accept = "image/*">
                         </div>
                         <div>3) Введите название мероприятия
-                            Название <input type="text" name ="title"></div>
+                            <input type="text" name ="title"></div>
                         <div> 4) Введите дату
                            <input type="text" name ="date"></div>
                         <div> 5) Введите локацию
-                            Локация <input type="text" name ="location"></div>
+                            <input type="text" name ="location"></div>
                         <div> 6) Введите информацию об оборудовании
-                            Оборудование <input type="text" name ="equipment"></div>
+                            <input type="text" name ="equipment"></div>
                         <div> 7) Введите ссылку на меропритие
-                            Ссылка на меропритие<input type="text" name ="url"></div>
+                            <input type="text" name ="url"></div>
 
                         {{-- <label for="1"> <input value = "1" type="radio" id="1" name="is_active" checked="checked">Показывать</label>
                         <label for="0"><input value = "0" type="radio" id="0" name="is_active">Не показывать</label> --}}

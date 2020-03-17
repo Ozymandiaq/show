@@ -56,12 +56,6 @@
                                 <button type="submit" class="btn margin_bottom_1_5em">
                                     {{ __('Вход') }}
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn" href="{{ route('password.request') }}">
-                                        {{ __('Забыли пароль?') }}
-                                    </a>
-                                @endif
                             </div>
                         </div>
                     </form>

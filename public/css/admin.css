@@ -39,20 +39,33 @@
     overflow-x: hidden;
 }
 .adminWrap_menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .block_menuItem{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 .block_menuItem a{
     color: #fff;
     font-size: 1.5em;
+    -webkit-transition: all .6s;
     transition: all .6s;
 }
 .block_menuItem a:hover{
@@ -84,15 +97,43 @@
 .services_content__img{
     padding: 0.5em;
     display: block;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .5s;
     transition: all .5s;
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     height: 0;
 }
+
+.services_content__img div{
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.services_content__img input{
+    min-width: 19em;
+}
+.services_content__img select{
+    min-width: 19em;
+}
 .services_content__img__active{
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     height: unset;
 }
 .services_content__img form{
@@ -106,15 +147,44 @@
 .services_content__video{
     padding: 0.5em;
     display: block;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .5s;
     transition: all .5s;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     height: 0;
 }
+
+.services_content__video div{
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.services_content__video input{
+    min-width: 19em;
+}
+.services_content__video select{
+    min-width: 19em;
+}
+
 .services_content__video__active{
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     height: unset;
 }
 .services_content__video form{
@@ -126,6 +196,8 @@
 
 }
 .formItem{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -136,10 +208,11 @@
  margin-bottom: 1.5em;
 }
 .table img{
-    width: 4em;
+    width: 10em;
 }
 
 .table td, .table th {
+    padding: 12px;
     padding: .75rem;
     border: 1px solid #dee2e6;
 }
@@ -159,6 +232,26 @@
     display: none;
 }
 
+.eventsWrap div{
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.eventsWrap input{
+    min-width: 19em;
+}
+.eventsWrap select{
+    min-width: 19em;
+}
 
 
 

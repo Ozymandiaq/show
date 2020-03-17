@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="ru">
 <head>
+    <title>Техническое обеспечение мероприятий</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Предоставление звукового, светового и видео оборудования в аренду для концертов, фестивалей и частных вечеринок по СНГ. Техническое оборудование топовых производителей с сертификатом качества.">
+	<meta name="keywords" content="звук, свет, сцена, музыкальные инструменты, Led дисплеи, Бэклайн, технический продакшн, специалисты, концерты, мероприятия, шоу, вечеринки, техническое оборудование, проекты, аренда оборудования, брендовое оборудование, техническое обеспечение, выступления, развлечения, свадьбы, детские праздники, банкетные залы, артисты">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="x-rim-auto-match" content="none">
-    <link rel="stylesheet" type="text/css" href="/css/animate-all.css">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
-    <link rel="icon" type="image/png" href="/img/ico.png">
-    <title>SHOW CULTURA</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/animate-all.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/ico.png') }}">
 </head>
 <body>
 <div class="loader active">
-    <img src="/img/logo.png">
+    <img src="{{ asset('img/logo.png') }}">
 </div>
 <div class="body_line1 mob_none"></div>
 <div class="body_line2 mob_none"></div>
@@ -23,7 +25,7 @@
     <div class="head_line mob_none"></div>
     <div class="head_container flex">
         <a href="{{ route('index') }}" class="head_logo">
-            <img src="/img/logo.png">
+            <img src="{{ asset('img/logo.png') }}">
         </a>
         <div class="head_right flex">
             <div class="head_lng">
@@ -33,9 +35,11 @@
                     </div>
                     <div class="head_lng_fade">
                         <div class="head_lng_fade_box">
-                            <a href="#" class="head_lng_item active"><p>Ru</p></a>
-                            <a href="#" class="head_lng_item"><p>En</p></a>
-                            <a href="#" class="head_lng_item"><p>Kz</p></a>
+                            <form action="language">
+                                <a href="#" class="head_lng_item active"><p>Ru</p></a>
+                                <a href="#" class="head_lng_item"><p>En</p></a>
+                                <a href="#" class="head_lng_item"><p>Kz</p></a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -46,13 +50,13 @@
             </div>
             <div class="head_soc flex align-start mob_none">
                 <a href="https://t.me/ShowCultura/" target="_blank" class="head_soc_item">
-                    <img src="/img/head_i3.png">
+                    <img src="{{ asset('img/head_i3.png') }}">
                 </a>
                 <a href="https://www.instagram.com/show_cultura/" target="_blank" class="head_soc_item">
-                    <img src="/img/head_i2.png">
+                    <img src="{{ asset('img/head_i2.png') }}">
                 </a>
                 <a href="https://www.facebook.com/ShowCulturaRental/" target="_blank" class="head_soc_item">
-                    <img src="/img/head_i1.png">
+                    <img src="{{ asset('img/head_i1.png') }}">
                 </a>
             </div>
         </div>
@@ -84,13 +88,13 @@
         <div class="sec1_video_box">
             <div class="sec1_video_item active">
                 <div class="sec1_video_item_box" data-src="/video/1.mp4">
-                    <img src="/img/admin/sec1_v1.jpg">
+                    <img src="{{ asset('img/admin/sec1_v1.jpg') }}">
                 </div>
                 <div class="sec1_video_circle"></div>
             </div>
             <div class="sec1_video_item">
                 <div class="sec1_video_item_box" data-src="/video/1.mp4">
-                    <img src="/img/admin/sec1_v1.jpg">
+                    <img src="{{ asset('img/admin/sec1_v1.jpg') }}">
                 </div>
                 <div class="sec1_video_circle"></div>
             </div>
@@ -99,7 +103,7 @@
 </section>
 <section id="sec2">
     <div class="sec2_ritm">
-        <img src="/img/sec2_ritm.png">
+        <img src="{{ asset('img/sec2_ritm.png') }}">
     </div>
     <div class="sec2_title">
         Наше оборудование и квалифицированная команда
@@ -112,37 +116,37 @@
         <div class="sec2_left_box">
             <div class="sec2_left_item active">
                 <a href="#sec2" class="sec2_left_info" data-sec2="1">
-                    <img src="/img/sec2_i1.png" class="sec2_left_img">
+                    <img src="{{ asset('img/sec2_i1.png') }}" class="sec2_left_img">
                     <div class="sec2_left_text">Звук</div>
                 </a>
             </div>
             <div class="sec2_left_item">
                 <a href="#sec2" class="sec2_left_info" data-sec2="2">
-                    <img src="/img/sec2_i2.png" class="sec2_left_img">
+                    <img src="{{ asset('img/sec2_i2.png') }}" class="sec2_left_img">
                     <div class="sec2_left_text">Свет</div>
                 </a>
             </div>
             <div class="sec2_left_item">
                 <a href="#sec2" class="sec2_left_info" data-sec2="3">
-                    <img src="/img/sec2_i3.png" class="sec2_left_img">
+                    <img src="{{ asset('img/sec2_i3.png') }}" class="sec2_left_img">
                     <div class="sec2_left_text">LED дисплеи</div>
                 </a>
             </div>
             <div class="sec2_left_item">
                 <a href="#sec2" class="sec2_left_info" data-sec2="4">
-                    <img src="/img/sec2_i4.png" class="sec2_left_img">
+                    <img src="{{ asset('img/sec2_i4.png') }}" class="sec2_left_img">
                     <div class="sec2_left_text">Сценические конструкции</div>
                 </a>
             </div>
             <div class="sec2_left_item">
                 <a href="#sec2" class="sec2_left_info" data-sec2="5">
-                    <img src="/img/sec2_i5.png" class="sec2_left_img">
+                    <img src="{{ asset('img/sec2_i5.png') }}" class="sec2_left_img">
                     <div class="sec2_left_text">Технический продакшн</div>
                 </a>
             </div>
             <div class="sec2_left_item">
                 <a href="#sec2" class="sec2_left_info" data-sec2="6">
-                    <img src="/img/sec2_i6.png" class="sec2_left_img">
+                    <img src="{{ asset('img/sec2_i6.png') }}" class="sec2_left_img">
                     <div class="sec2_left_text">Технические специалисты</div>
                 </a>
             </div>
@@ -189,7 +193,7 @@
                                         <div class="sec2_iright_ibox" data-tip="video" data-src="/storage/{{$content->video_url}}">
                                             <video src width="100%" height="100%" controls></video>
                                             <div class="sec2_item_pl">
-                                                <img src="/img/admin/sec2_2im1.jpg" class="sec2_item_img">
+                                                <img src="{{ asset('img/admin/sec2_2im1.jpg') }}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
                                                     <img src="/storage/{{$content->img_url}}">
                                                 </div>
@@ -201,7 +205,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -214,10 +218,10 @@
                     </div>
                     <div class="sec2_slide_btns flex end">
                         <div class="sec2_slide_arrow" id="to-left1">
-                            <img src="/img/next.png" class="slide_prev">
+                            <img src="{{ asset('img/next.png') }}" class="slide_prev">
                         </div>
                         <div class="sec2_slide_arrow" id="to-right1">
-                            <img src="/img/next.png" class="slide_next">
+                            <img src="{{ asset('img/next.png') }}" class="slide_next">
                         </div>
                     </div>
                 @endisset
@@ -265,7 +269,7 @@
                                         <div class="sec2_iright_ibox" data-tip="video" data-src="/storage/{{$content->video_url}}">
                                             <video src width="100%" height="100%" controls></video>
                                             <div class="sec2_item_pl">
-                                                <img src="/img/admin/sec2_2im1.jpg" class="sec2_item_img">
+                                                <img src="{{ asset('img/admin/sec2_2im1.jpg') }}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
                                                     <img src="/storage/{{$content->img_url}}">
                                                 </div>
@@ -277,7 +281,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -291,10 +295,10 @@
                     </div>
                     <div class="sec2_slide_btns flex end">
                         <div class="sec2_slide_arrow" id="to-left2">
-                            <img src="/img/next.png" class="slide_prev">
+                            <img src="{{ asset('img/next.png') }}" class="slide_prev">
                         </div>
                         <div class="sec2_slide_arrow" id="to-right2">
-                            <img src="/img/next.png" class="slide_next">
+                            <img src="{{ asset('img/next.png') }}" class="slide_next">
                         </div>
                     </div>
 
@@ -338,7 +342,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -348,7 +352,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -361,10 +365,10 @@
                     </div>
                     <div class="sec2_slide_btns flex end">
                         <div class="sec2_slide_arrow" id="to-left3">
-                            <img src="/img/next.png" class="slide_prev">
+                            <img src="{{ asset('img/next.png') }}" class="slide_prev">
                         </div>
                         <div class="sec2_slide_arrow" id="to-right3">
-                            <img src="/img/next.png" class="slide_next">
+                            <img src="{{ asset('img/next.png') }}" class="slide_next">
                         </div>
                     </div>
                 @endisset
@@ -406,7 +410,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -416,7 +420,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -429,10 +433,10 @@
                     </div>
                     <div class="sec2_slide_btns flex end">
                         <div class="sec2_slide_arrow" id="to-left4">
-                            <img src="/img/next.png" class="slide_prev">
+                            <img src="{{ asset('img/next.png') }}" class="slide_prev">
                         </div>
                         <div class="sec2_slide_arrow" id="to-right4">
-                            <img src="/img/next.png" class="slide_next">
+                            <img src="{{ asset('img/next.png') }}" class="slide_next">
                         </div>
                     </div>
                 @endisset
@@ -476,7 +480,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -486,7 +490,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -499,10 +503,10 @@
                     </div>
                     <div class="sec2_slide_btns flex end">
                         <div class="sec2_slide_arrow" id="to-left5">
-                            <img src="/img/next.png" class="slide_prev">
+                            <img src="{{ asset('img/next.png') }}" class="slide_prev">
                         </div>
                         <div class="sec2_slide_arrow" id="to-right5">
-                            <img src="/img/next.png" class="slide_next">
+                            <img src="{{ asset('img/next.png') }}" class="slide_next">
                         </div>
                     </div>
                 @endisset
@@ -544,7 +548,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -554,7 +558,7 @@
                                             <div class="sec2_item_pl">
                                                 <img src="/storage/{{$content->img_url}}" class="sec2_item_img">
                                                 <div class="sec2_video_icon flex center align-center">
-                                                    <img src="/img/video_icon.png">
+                                                    <img src="{{ asset('img/video_icon.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -567,10 +571,10 @@
                     </div>
                     <div class="sec2_slide_btns flex end">
                         <div class="sec2_slide_arrow" id="to-left6">
-                            <img src="/img/next.png" class="slide_prev">
+                            <img src="{{ asset('img/next.png') }}" class="slide_prev">
                         </div>
                         <div class="sec2_slide_arrow" id="to-right6">
-                            <img src="/img/next.png" class="slide_next">
+                            <img src="{{ asset('img/next.png') }}" class="slide_next">
                         </div>
                     </div>
                 @endisset
@@ -597,7 +601,7 @@
                 <div class="sec3_quiz_circle2"></div>
                 <div class="sec3_quiz_item active" data-id="1">
                     <div class="sec3_quiz_img">
-                        <img src="/img/sec3_quiz_i1.png">
+                        <img src="{{ asset('img/sec3_quiz_i1.png') }}">
                     </div>
                     <div class="sec3_quiz_title1">
                         Вопрос 01
@@ -667,14 +671,14 @@
                         <div class="btn2 btn2_q1">
                             <div class="btn2_box flex align-center">
                                 <div class="btn2_text">Следующий вопрос</div>
-                                <img src="/img/btn2_next.png" class="btn2_img">
+                                <img src="{{ asset('img/btn2_next.png') }}" class="btn2_img">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sec3_quiz_item" data-id="2">
                     <div class="sec3_quiz_img">
-                        <img src="/img/sec3_quiz_i2.png">
+                        <img src="{{ asset('img/sec3_quiz_i2.png') }}">
                     </div>
                     <div class="sec3_quiz_title1">
                         Вопрос 02
@@ -716,14 +720,14 @@
                         <div class="btn2 btn2_q2">
                             <div class="btn2_box flex align-center">
                                 <div class="btn2_text">Следующий вопрос</div>
-                                <img src="/img/btn2_next.png" class="btn2_img">
+                                <img src="{{ asset('img/btn2_next.png') }}" class="btn2_img">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sec3_quiz_item" data-id="3">
                     <div class="sec3_quiz_img">
-                        <img src="/img/sec3_quiz_i3.png">
+                        <img src="{{ asset('img/sec3_quiz_i3.png') }}">
                     </div>
                     <div class="sec3_quiz_title1">
                         Вопрос 03
@@ -768,14 +772,14 @@
                         <div class="btn2 btn2_q3">
                             <div class="btn2_box flex align-center">
                                 <div class="btn2_text">Следующий вопрос</div>
-                                <img src="/img/btn2_next.png" class="btn2_img">
+                                <img src="{{ asset('img/btn2_next.png') }}" class="btn2_img">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sec3_quiz_item" data-id="4">
                     <div class="sec3_quiz_img">
-                        <img src="/img/sec3_quiz_i4.png">
+                        <img src="{{ asset('img/sec3_quiz_i4.png') }}">
                     </div>
                     <div class="sec3_quiz_title1">
                         Вопрос 04
@@ -810,14 +814,14 @@
                         <div class="btn2 btn2_q4">
                             <div class="btn2_box flex align-center">
                                 <div class="btn2_text">Следующий вопрос</div>
-                                <img src="/img/btn2_next.png" class="btn2_img">
+                                <img src="{{ asset('img/btn2_next.png') }}" class="btn2_img">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sec3_quiz_item" data-id="5">
                     <div class="sec3_quiz_img">
-                        <img src="/img/sec3_quiz_i5.png">
+                        <img src="{{ asset('img/sec3_quiz_i5.png') }}">
                     </div>
                     <div class="sec3_quiz_title1">
                         Вопрос 05
@@ -915,7 +919,7 @@
     <div class="sec4_title">Мы–Show Cultura!</div>
     <div class="sec4_info">
         <div class="sec4_volna mob_none">
-            <img src="/img/sec4_volna.png">
+            <img src="{{ asset('img/sec4_volna.png') }}">
         </div>
         <div class="sec4_item_line sec4_l1">
             <div class="sec4_item_top">
@@ -1029,7 +1033,7 @@
         <div class="sec5_info_item" data-id="1">
             <div class="sec5_item_pl"></div>
             <div class="sec5_item_imgs">
-                <img src="/img/admin/sec5_im1.jpg" class="sec5_item_im">
+                <img src="{{ asset('img/admin/sec5_im1.jpg') }}" class="sec5_item_im">
             </div>
             <div class="sec5_item_name">Нур-Султан</div>
             <div class="sec5_item_num">20</div>
@@ -1037,7 +1041,7 @@
         <div class="sec5_info_item" data-id="2">
             <div class="sec5_item_pl"></div>
             <div class="sec5_item_imgs">
-                <img src="/img/admin/sec5_im2.jpg" class="sec5_item_im">
+                <img src="{{ asset('img/admin/sec5_im2.jpg') }}" class="sec5_item_im">
             </div>
             <div class="sec5_item_name">Алматы</div>
             <div class="sec5_item_num">200</div>
@@ -1045,7 +1049,7 @@
         <div class="sec5_info_item" data-id="3">
             <div class="sec5_item_pl"></div>
             <div class="sec5_item_imgs">
-                <img src="/img/admin/sec5_im3.jpg" class="sec5_item_im">
+                <img src="{{ asset('img/admin/sec5_im3.jpg') }}" class="sec5_item_im">
             </div>
             <div class="sec5_item_name">Бишкек</div>
             <div class="sec5_item_num">4</div>
@@ -1053,7 +1057,7 @@
         <div class="sec5_info_item" data-id="4">
             <div class="sec5_item_pl"></div>
             <div class="sec5_item_imgs">
-                <img src="/img/admin/sec5_im4.jpg" class="sec5_item_im">
+                <img src="{{ asset('img/admin/sec5_im4.jpg') }}" class="sec5_item_im">
             </div>
             <div class="sec5_item_name">Шымкент</div>
             <div class="sec5_item_num">5</div>
@@ -1061,41 +1065,41 @@
     </div>
     <div class="sec5_info_btns flex end">
         <div class="sec2_slide_arrow" id="to-left7">
-            <img src="/img/next.png" class="slide_prev">
+            <img src="{{ asset('img/next.png') }}" class="slide_prev">
         </div>
         <div class="sec2_slide_arrow" id="to-right7">
-            <img src="/img/next.png" class="slide_next">
+            <img src="{{ asset('img/next.png') }}" class="slide_next">
         </div>
     </div>
     <div class="sec5_info_box">
         <div class="sec5_none_item" data-id="1">
-            <a href="/img/admin/sec5_1im1.jpg" class="sec5_item_imurl" rel="1" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_1im1.jpg') }}" class="sec5_item_imurl" rel="1" data-fancybox="gallery"></a>
         </div>
         <div class="sec5_none_item" data-id="2">
-            <a href="/img/admin/sec5_2im1.jpg" class="sec5_item_imurl" rel="2" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_2im2.jpg" rel="2" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_2im3.jpg" rel="2" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_2im4.jpg" rel="2" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_2im5.jpg" rel="2" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_2im6.jpg" rel="2" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_2im7.jpg" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im1.jpg') }}" class="sec5_item_imurl" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im2.jpg') }}" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im3.jpg') }}" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im4.jpg') }}" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im5.jpg') }}" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im6.jpg') }}" rel="2" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_2im7.jpg') }}" rel="2" data-fancybox="gallery"></a>
         </div>
         <div class="sec5_none_item" data-id="3">
-            <a href="/img/admin/sec5_3im1.jpg" class="sec5_item_imurl" rel="3" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_3im2.jpg" rel="3" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_3im3.jpg" rel="3" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_3im4.jpg" rel="3" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_3im1.jpg') }}" class="sec5_item_imurl" rel="3" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_3im2.jpg') }}" rel="3" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_3im3.jpg') }}" rel="3" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_3im4.jpg') }}" rel="3" data-fancybox="gallery"></a>
         </div>
         <div class="sec5_none_item" data-id="4">
-            <a href="/img/admin/sec5_4im1.jpg" class="sec5_item_imurl" rel="4" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_4im2.jpg" rel="4" data-fancybox="gallery"></a>
-            <a href="/img/admin/sec5_4im3.jpg" rel="4" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_4im1.jpg') }}" class="sec5_item_imurl" rel="4" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_4im2.jpg') }}" rel="4" data-fancybox="gallery"></a>
+            <a href="{{ asset('img/admin/sec5_4im3.jpg') }}" rel="4" data-fancybox="gallery"></a>
         </div>
     </div>
 </section>
 <section id="sec6">
     <div class="sec6_ritm">
-        <img src="/img/sec6_ritm.png">
+        <img src="{{ asset('img/sec6_ritm.png') }}">
     </div>
     <div class="sec6_title1">Успешные мероприятия</div>
     <div class="sec6_title2">с Show Cultura</div>
@@ -1153,10 +1157,10 @@
                 </div>
                 <div class="sec6_slider_btns flex end">
                     <div class="sec2_slide_arrow" id="to-left8">
-                        <img src="/img/next.png" class="slide_prev">
+                        <img src="{{ asset('img/next.png') }}" class="slide_prev">
                     </div>
                     <div class="sec2_slide_arrow" id="to-right8">
-                        <img src="/img/next.png" class="slide_next">
+                        <img src="{{ asset('img/next.png') }}" class="slide_next">
                     </div>
                 </div>
             </div>
@@ -1208,10 +1212,10 @@
                 </div>
                 <div class="sec6_slider_btns flex end">
                     <div class="sec2_slide_arrow" id="to-left9">
-                        <img src="/img/next.png" class="slide_prev">
+                        <img src="{{ asset('img/next.png') }}" class="slide_prev">
                     </div>
                     <div class="sec2_slide_arrow" id="to-right9">
-                        <img src="/img/next.png" class="slide_next">
+                        <img src="{{ asset('img/next.png') }}" class="slide_next">
                     </div>
                 </div>
             </div>
@@ -1264,10 +1268,10 @@
                 </div>
                 <div class="sec6_slider_btns flex end">
                     <div class="sec2_slide_arrow" id="to-left10">
-                        <img src="/img/next.png" class="slide_prev">
+                        <img src="{{ asset('img/next.png') }}" class="slide_prev">
                     </div>
                     <div class="sec2_slide_arrow" id="to-right10">
-                        <img src="/img/next.png" class="slide_next">
+                        <img src="{{ asset('img/next.png') }}" class="slide_next">
                     </div>
                 </div>
             </div>
@@ -1282,19 +1286,19 @@
             </div>
             <div class="sec7_left_info flex">
                 <div class="sec7_left_item active">
-                    <img src="/img/sec7_left_pl.png" class="sec7_left_pl">
+                    <img src="{{ asset('img/sec7_left_pl.png') }}" class="sec7_left_pl">
                     <div class="sec7_litem_num">01</div>
                     <div class="sec7_litem_title">Начальный этап:</div>
                     <div class="sec7_litem_text">заявка, предоставление менеджера, просчет сметы, подписание договора</div>
                 </div>
                 <div class="sec7_left_item active">
-                    <img src="/img/sec7_left_pl.png" class="sec7_left_pl">
+                    <img src="{{ asset('img/sec7_left_pl.png') }}" class="sec7_left_pl">
                     <div class="sec7_litem_num">02</div>
                     <div class="sec7_litem_title">Реализация проекта:</div>
                     <div class="sec7_litem_text">подготовка оборудования, монтаж, проверка оборудования</div>
                 </div>
                 <div class="sec7_left_item active">
-                    <img src="/img/sec7_left_pl.png" class="sec7_left_pl">
+                    <img src="{{ asset('img/sec7_left_pl.png') }}" class="sec7_left_pl">
                     <div class="sec7_litem_num">03</div>
                     <div class="sec7_litem_title">Заключительный этап:</div>
                     <div class="sec7_litem_text">контроль в проведении мероприятия, демонтаж </div>
@@ -1308,7 +1312,7 @@
             <div class="sec7_right_info owl-carousel" id="sec7slider">
                 <div class="sec7_right_item flex">
                     <div class="sec7_ritem_img">
-                        <img src="/img/admin/sec7_im3.jpg">
+                        <img src="{{ asset('img/admin/sec7_im3.jpg') }}">
                     </div>
                     <div class="sec7_ritem_info">
                         <div class="sec7_ritem_top">
@@ -1331,14 +1335,14 @@
                         <div class="sec7_ritem_bottom">
                             <a href="#showmodal" class="sec7_btn flex align-center" data-toggle="modal">
                                 <div class="sec7_btn_text">Начать сотрудничество</div>
-                                <img src="/img/sec7_next.png" class="sec7_btn_img">
+                                <img src="{{ asset('img/sec7_next.png') }}" class="sec7_btn_img">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="sec7_right_item flex">
                     <div class="sec7_ritem_img">
-                        <img src="/img/admin/sec7_im1.jpg">
+                        <img src="{{ asset('img/admin/sec7_im1.jpg') }}">
                     </div>
                     <div class="sec7_ritem_info">
                         <div class="sec7_ritem_top">
@@ -1361,14 +1365,14 @@
                         <div class="sec7_ritem_bottom">
                             <a href="#showmodal" class="sec7_btn flex align-center" data-toggle="modal">
                                 <div class="sec7_btn_text">Начать сотрудничество</div>
-                                <img src="/img/sec7_next.png" class="sec7_btn_img">
+                                <img src="{{ asset('img/sec7_next.png') }}" class="sec7_btn_img">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="sec7_right_item flex">
                     <div class="sec7_ritem_img">
-                        <img src="/img/admin/sec7_im2.jpg">
+                        <img src="{{ asset('img/admin/sec7_im2.jpg') }}">
                     </div>
                     <div class="sec7_ritem_info">
                         <div class="sec7_ritem_top">
@@ -1391,7 +1395,7 @@
                         <div class="sec7_ritem_bottom">
                             <a href="#showmodal" class="sec7_btn flex align-center" data-toggle="modal">
                                 <div class="sec7_btn_text">Начать сотрудничество</div>
-                                <img src="/img/sec7_next.png" class="sec7_btn_img">
+                                <img src="{{ asset('img/sec7_next.png') }}" class="sec7_btn_img">
                             </a>
                         </div>
                     </div>
@@ -1399,10 +1403,10 @@
             </div>
             <div class="sec7_slide_btns flex end">
                 <div class="sec2_slide_arrow" id="to-left11">
-                    <img src="/img/next.png" class="slide_prev">
+                    <img src="{{ asset('img/next.png') }}" class="slide_prev">
                 </div>
                 <div class="sec2_slide_arrow" id="to-right11">
-                    <img src="/img/next.png" class="slide_next">
+                    <img src="{{ asset('img/next.png') }}" class="slide_next">
                 </div>
             </div>
         </div>
@@ -1410,13 +1414,13 @@
 </section>
 <footer class="flex align-end">
     <a href="{{ route('index') }}" class="foot_logo">
-        <img src="/img/foot-logo.png">
+        <img src="{{ asset('img/foot-logo.png') }}">
     </a>
     <div class="foot_info flex align-end">
         <div class="foot_info_left flex align-center">
             <a href="https://go.2gis.com/m84ud" target="_blank" class="foot_left_item">
                 <div class="foot_litem_img foot_img_sm">
-                    <img src="/img/foot_geo.png">
+                    <img src="{{ asset('img/foot_geo.png') }}">
                 </div>
                 <div class="foot_litem_text">
                     <p>г. Алматы, БЦ "Навои", Жандосова 98, оф. 708</p>
@@ -1424,7 +1428,7 @@
             </a>
             <div class="foot_left_item">
                 <div class="foot_litem_img">
-                    <img src="/img/foot_tell.png">
+                    <img src="{{ asset('img/foot_tell.png') }}">
                 </div>
                 <div class="foot_litem_tellbox">
                     <a href="tel:+77779656415" target="_blank" class="foot_litem_tell">+7 (777) 965 64 15</a>
@@ -1434,17 +1438,17 @@
         </div>
         <div class="foot_info_right flex align-center">
             <a href="https://maint.kz/" target="_blank" class="foot_maint">
-                <img src="/img/maint_icon.png">
+                <img src="{{ asset('img/maint_icon.png') }}">
             </a>
             <div class="foot_soc flex">
                 <a href="https://t.me/ShowCultura/" target="_blank" class="foot_soc_item">
-                    <img src="/img/head_i3.png">
+                    <img src="{{ asset('img/head_i3.png') }}">
                 </a>
                 <a href="https://www.instagram.com/show_cultura/" target="_blank" class="foot_soc_item">
-                    <img src="/img/head_i2.png">
+                    <img src="{{ asset('img/head_i2.png') }}">
                 </a>
                 <a href="https://www.facebook.com/ShowCulturaRental/" target="_blank" class="foot_soc_item">
-                    <img src="/img/head_i1.png">
+                    <img src="{{ asset('img/head_i1.png') }}">
                 </a>
             </div>
         </div>
@@ -1452,33 +1456,33 @@
 </footer>
 <div class="mob_flex sec2_mobfoot">
     <a href="#sec2" class="sec2_left_info" data-sec2="1">
-        <img src="/img/sec2_i1.png" class="sec2_left_img">
+        <img src="{{ asset('img/sec2_i1.png') }}" class="sec2_left_img">
         <div class="sec2_left_text">Звук</div>
     </a>
     <a href="#sec2" class="sec2_left_info" data-sec2="2">
-        <img src="/img/sec2_i2.png" class="sec2_left_img">
+        <img src="{{ asset('img/sec2_i2.png') }}" class="sec2_left_img">
         <div class="sec2_left_text">Свет</div>
     </a>
     <a href="#sec2" class="sec2_left_info" data-sec2="3">
-        <img src="/img/sec2_i3.png" class="sec2_left_img">
+        <img src="{{ asset('img/sec2_i3.png') }}" class="sec2_left_img">
         <div class="sec2_left_text">LED дисплеи</div>
     </a>
     <a href="#sec2" class="sec2_left_info" data-sec2="4">
-        <img src="/img/sec2_i4.png" class="sec2_left_img">
+        <img src="{{ asset('img/sec2_i4.png') }}" class="sec2_left_img">
         <div class="sec2_left_text">Сценические конструкции</div>
     </a>
     <a href="#sec2" class="sec2_left_info" data-sec2="5">
-        <img src="/img/sec2_i5.png" class="sec2_left_img">
+        <img src="{{ asset('img/sec2_i5.png') }}" class="sec2_left_img">
         <div class="sec2_left_text">Технический продакшн</div>
     </a>
     <a href="#sec2" class="sec2_left_info" data-sec2="6">
-        <img src="/img/sec2_i6.png" class="sec2_left_img">
+        <img src="{{ asset('img/sec2_i6.png') }}" class="sec2_left_img">
         <div class="sec2_left_text">Технические специалисты</div>
     </a>
 </div>
-<script src="/js/all_js.js"></script>
-<script src="/js/all_st_js.js"></script>
-<script src="/js/code.js"></script>
+<script src="{{ asset('js/all_js.js') }}"></script>
+<script src="{{ asset('js/all_st_js.js') }}"></script>
+<script src="{{ asset('js/code.js') }}"></script>
 </body>
 </html>
 <div class="modal animated zoomIn" id="showmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -1486,7 +1490,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="modal_line">
-                    <img src="/img/modal_line.png">
+                    <img src="{{ asset('img/modal_line.png') }}">
                 </div>
                 <form action="{{ route('send')}}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
@@ -1503,7 +1507,7 @@
                     </div>
                 </form>
                 <button type="button" class="modal_close" data-dismiss="modal">
-                    <img src="/img/modal_close.png">
+                    <img src="{{ asset('img/modal_close.png') }}">
                 </button>
             </div>
         </div>
